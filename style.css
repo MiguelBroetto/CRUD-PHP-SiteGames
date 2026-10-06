@@ -1,0 +1,350 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #272b30;
+    color: #b8b8b8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    padding: 0 5%;
+    background-color: #343a40;
+    border-bottom: 1px solid #464b50;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span { color: #4799eb; }
+
+.navegacao {
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    right: 5%;
+}
+
+.navegacao a {
+    display: inline-block;
+    margin-left: 24px;
+    color: #b8b8b8;
+    text-decoration: none;
+}
+
+.navegacao a:hover { color: #fff; }
+
+main {
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.apresentacao {
+    display: block;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.apresentacao h1 { margin-bottom: 15px; color: #fff; font-size: 32px; }
+.apresentacao p { margin-bottom: 28px; font-size: 18px; }
+
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: #4799eb;
+    color: #fff;
+    text-decoration: none;
+}
+
+.categoria {
+    display: block;
+    margin-bottom: 55px;
+    font-size: 0;
+}
+
+.categoria > h1 {
+    display: block;
+    margin-bottom: 22px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 31.33%;
+    min-height: 315px;
+    margin-right: 2%;
+    margin-bottom: 22px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #32383e;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.card-imagem { display: block; width: 100%; }
+
+.card-imagem img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-titulo {
+    display: block;
+    padding: 15px 15px 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-descricao {
+    display: block;
+    min-height: 48px;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-link {
+    display: inline-block;
+    margin: 12px 15px 18px;
+    color: #4799eb;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.card-link:hover { text-decoration: underline; }
+
+.card-destaque {
+    display: block;
+    position: relative;
+    min-height: 220px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #32383e;
+    font-size: 16px;
+}
+
+.card-destaque .card-imagem {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.card-destaque .card-imagem img { height: 220px; }
+
+.card-conteudo {
+    display: inline-block;
+    position: relative;
+    width: 54%;
+    padding: 25px;
+    vertical-align: top;
+}
+
+.card-conteudo .card-titulo,
+.card-conteudo .card-descricao { padding-left: 0; }
+.card-conteudo .card-link { margin-left: 0; }
+
+.etiqueta {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    background-color: #4799eb;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    padding: 38px 20px;
+    border-top: 1px solid #44484d;
+    background-color: #1c1e22;
+    text-align: center;
+}
+
+footer h2 { margin-bottom: 14px; color: #fff; }
+footer p { margin: 7px 0; }
+
+.area-login {
+    display: block;
+    width: 100%;
+    padding: 10px 0 65px;
+}
+
+.login {
+    display: block;
+    position: relative;
+    width: 420px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 6px;
+    background-color: #32383e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login h1 {
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.login-descricao {
+    margin-bottom: 30px;
+    color: #b8b8b8;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.campo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.campo input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555b61;
+    border-radius: 4px;
+    outline: none;
+    background-color: #272b30;
+    color: #fff;
+}
+
+.campo input:focus { border-color: #4799eb; }
+.campo input::placeholder { color: #85898d; }
+
+.opcoes-login {
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.opcoes-login input,
+.opcoes-login label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.opcoes-login label {
+    margin-left: 4px;
+    color: #b8b8b8;
+}
+
+.opcoes-login a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    color: #4799eb;
+    text-decoration: none;
+}
+
+.login button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4799eb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login button:hover { background-color: #327fc9; }
+
+.criar-conta {
+    margin-top: 25px;
+    color: #b8b8b8;
+    font-size: 14px;
+    text-align: center;
+}
+
+.criar-conta a,
+.opcoes-login a {
+    color: #4799eb;
+    text-decoration: none;
+}
+
+.criar-conta a:hover,
+.opcoes-login a:hover { text-decoration: underline; }
+
+@media (max-width: 700px) {
+    header { height: auto; padding: 18px 5%; text-align: center; }
+    .logo, .navegacao { display: block; position: static; }
+    .navegacao { margin-top: 15px; }
+    .navegacao a { margin: 5px 8px; }
+    .card { display: block; width: 100%; margin-right: 0; }
+    .card-destaque .card-imagem, .card-conteudo { display: block; width: 100%; }
+    .opcoes-login a { display: block; position: static; margin-top: 12px; }
+}
+
+.msgErro{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.msgAcerto{
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn.ativo{
+    color: white;
+    background-color: #1c8ed5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #0000002d;
+    padding: 10px;
+}
+
+.deletar{
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+}
+
+.editar{
+    background-color: rgb(13, 118, 36);
+    color: white;
+    border-radius: 2px;
+}
