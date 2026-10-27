@@ -52,6 +52,7 @@ Para executar a aplicação, pode ser necessário configurar um ambiente local c
 ## Finalidade acadêmica
 
 Projeto desenvolvido para fins de estudo e prática de programação web, com foco na utilização de PHP e na compreensão das operações CRUD.
+OBS: A parte de atualiza o cadastro do usuário e pesquisar usuário ainda está incompleta.
 
 ## Autor
 
