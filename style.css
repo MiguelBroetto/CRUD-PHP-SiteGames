@@ -1,4 +1,8 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #272b30;
@@ -25,7 +29,9 @@ header {
     font-weight: bold;
 }
 
-.logo span { color: #4799eb; }
+.logo span {
+    color: #4799eb;
+}
 
 .navegacao {
     display: inline-block;
@@ -41,7 +47,9 @@ header {
     text-decoration: none;
 }
 
-.navegacao a:hover { color: #fff; }
+.navegacao a:hover {
+    color: #fff;
+}
 
 main {
     display: block;
@@ -56,8 +64,16 @@ main {
     text-align: center;
 }
 
-.apresentacao h1 { margin-bottom: 15px; color: #fff; font-size: 32px; }
-.apresentacao p { margin-bottom: 28px; font-size: 18px; }
+.apresentacao h1 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 32px;
+}
+
+.apresentacao p {
+    margin-bottom: 28px;
+    font-size: 18px;
+}
 
 .botao {
     display: inline-block;
@@ -74,7 +90,7 @@ main {
     font-size: 0;
 }
 
-.categoria > h1 {
+.categoria>h1 {
     display: block;
     margin-bottom: 22px;
     color: #fff;
@@ -95,7 +111,10 @@ main {
     vertical-align: top;
 }
 
-.card-imagem { display: block; width: 100%; }
+.card-imagem {
+    display: block;
+    width: 100%;
+}
 
 .card-imagem img {
     display: block;
@@ -128,7 +147,9 @@ main {
     text-decoration: none;
 }
 
-.card-link:hover { text-decoration: underline; }
+.card-link:hover {
+    text-decoration: underline;
+}
 
 .card-destaque {
     display: block;
@@ -146,7 +167,9 @@ main {
     vertical-align: top;
 }
 
-.card-destaque .card-imagem img { height: 220px; }
+.card-destaque .card-imagem img {
+    height: 220px;
+}
 
 .card-conteudo {
     display: inline-block;
@@ -157,8 +180,13 @@ main {
 }
 
 .card-conteudo .card-titulo,
-.card-conteudo .card-descricao { padding-left: 0; }
-.card-conteudo .card-link { margin-left: 0; }
+.card-conteudo .card-descricao {
+    padding-left: 0;
+}
+
+.card-conteudo .card-link {
+    margin-left: 0;
+}
 
 .etiqueta {
     display: inline-block;
@@ -182,8 +210,14 @@ footer {
     text-align: center;
 }
 
-footer h2 { margin-bottom: 14px; color: #fff; }
-footer p { margin: 7px 0; }
+footer h2 {
+    margin-bottom: 14px;
+    color: #fff;
+}
+
+footer p {
+    margin: 7px 0;
+}
 
 .area-login {
     display: block;
@@ -240,8 +274,13 @@ footer p { margin: 7px 0; }
     color: #fff;
 }
 
-.campo input:focus { border-color: #4799eb; }
-.campo input::placeholder { color: #85898d; }
+.campo input:focus {
+    border-color: #4799eb;
+}
+
+.campo input::placeholder {
+    color: #85898d;
+}
 
 .opcoes-login {
     display: block;
@@ -281,7 +320,9 @@ footer p { margin: 7px 0; }
     cursor: pointer;
 }
 
-.login button:hover { background-color: #327fc9; }
+.login button:hover {
+    background-color: #327fc9;
+}
 
 .criar-conta {
     margin-top: 25px;
@@ -297,19 +338,51 @@ footer p { margin: 7px 0; }
 }
 
 .criar-conta a:hover,
-.opcoes-login a:hover { text-decoration: underline; }
-
-@media (max-width: 700px) {
-    header { height: auto; padding: 18px 5%; text-align: center; }
-    .logo, .navegacao { display: block; position: static; }
-    .navegacao { margin-top: 15px; }
-    .navegacao a { margin: 5px 8px; }
-    .card { display: block; width: 100%; margin-right: 0; }
-    .card-destaque .card-imagem, .card-conteudo { display: block; width: 100%; }
-    .opcoes-login a { display: block; position: static; margin-top: 12px; }
+.opcoes-login a:hover {
+    text-decoration: underline;
 }
 
-.msgErro{
+@media (max-width: 700px) {
+    header {
+        height: auto;
+        padding: 18px 5%;
+        text-align: center;
+    }
+
+    .logo,
+    .navegacao {
+        display: block;
+        position: static;
+    }
+
+    .navegacao {
+        margin-top: 15px;
+    }
+
+    .navegacao a {
+        margin: 5px 8px;
+    }
+
+    .card {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .card-destaque .card-imagem,
+    .card-conteudo {
+        display: block;
+        width: 100%;
+    }
+
+    .opcoes-login a {
+        display: block;
+        position: static;
+        margin-top: 12px;
+    }
+}
+
+.msgErro {
     position: fixed;
     bottom: 50px;
     right: 10px;
@@ -319,7 +392,7 @@ footer p { margin: 7px 0; }
     border-radius: 10px;
 }
 
-.msgAcerto{
+.msgAcerto {
     position: fixed;
     bottom: 60px;
     right: 10px;
@@ -329,7 +402,7 @@ footer p { margin: 7px 0; }
     border-radius: 10px;
 }
 
-.btn.ativo{
+.btn.ativo {
     color: white;
     background-color: #1c8ed5;
     border-radius: 5px;
@@ -337,13 +410,13 @@ footer p { margin: 7px 0; }
     padding: 10px;
 }
 
-.deletar{
+.deletar {
     background-color: red;
     color: white;
     border-radius: 2px;
 }
 
-.editar{
+.editar {
     background-color: rgb(13, 118, 36);
     color: white;
     border-radius: 2px;
