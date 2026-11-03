@@ -3,7 +3,7 @@
     $servername = "localhost";
     $username = "root"; // Seu usuário.
     $password = ""; // sua senha
-    $bdname = "projeto_Postagens_2026";
+    $bdname = "site_games_crud";
 
     $conn = mysqli_connect($servername, $username, $password, $bdname);
 
